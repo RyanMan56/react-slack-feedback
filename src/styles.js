@@ -62,11 +62,12 @@ const load = keyframes`
 
 const SlackFeedback = styled.div`
   position: relative;
+  height: 354.781px;
   font-family: ${theme('fontFamily', 'inherit')};
   z-index: 99999998;
   bottom: 12px;
   right: 0;
-  margin: 1em;
+  margin: 0;
   text-align: left;
   font-weight: ${theme('content.fontWeight', 400)};
 
@@ -150,6 +151,10 @@ const Header = styled.div`
 
 const Content = styled.div`
   padding: ${theme('content.padding')};
+
+  @media only screen and (max-width: 380px) {
+    width: 100vw;
+  }
 `
 
 const Icon = styled.div`
