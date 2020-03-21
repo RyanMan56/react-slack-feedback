@@ -117,6 +117,10 @@
   img {
     margin-right: 8px;
   }
+
+  @media only screen and (max-width: 380px) {
+    right: 1em;
+  }
 `,Tabs=styled__default.ul`
   display: flex;
   list-style: none;

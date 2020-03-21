@@ -191,6 +191,10 @@ const Trigger = styled.div`
   img {
     margin-right: 8px;
   }
+
+  @media only screen and (max-width: 380px) {
+    right: 1em;
+  }
 `
 
 const Tabs = styled.ul`

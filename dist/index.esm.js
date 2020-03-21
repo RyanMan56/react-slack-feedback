@@ -117,6 +117,10 @@ import e from"react";import t,{css as r,keyframes as o,ThemeProvider as a}from"s
   img {
     margin-right: 8px;
   }
+
+  @media only screen and (max-width: 380px) {
+    right: 1em;
+  }
 `),E=t.ul`
   display: flex;
   list-style: none;
