@@ -2,11 +2,12 @@
   margin-right: 8px;
 `;const rgba=(e,t=1)=>{const r=/^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(e);return r?`rgba(${parseInt(r[1],16)}, ${parseInt(r[2],16)}, ${parseInt(r[3],16)}, ${isNaN(parseInt(t,10))?1:t})`:"inherit"},get=(e,t,r)=>(e||"object"==typeof e)&&t.split(".").reduce((e,t)=>e&&e[t]?e[t]:null,e)||r,theme=(e,t="inherit")=>(r={})=>get(r.theme,e,t),resets=styled.css(["box-shadow:none;color:inherit;margin:inherit;padding:inherit;"]),formStyles=styled.css(["",";box-sizing:border-box;"],resets),fadeInUp=styled.keyframes(["from{opacity:0;transform:translate3d(0,40px,0);}to{opacity:1;transform:none;}"]),animationFadeInUp=styled.css(["animation:"," 0.4s ease;animation-fill-mode:both;"],fadeInUp),fadeOutDown=styled.keyframes(["from{opacity:1;transform:none;}to{opacity:0;display:none;transform:translate3d(0,10%,0);}"]),animationFadeOutDown=styled.css(["animation:"," 0.4s ease;animation-fill-mode:both;"],fadeOutDown),load=styled.keyframes(["0%{transform:rotate(0deg);}100%{transform:rotate(360deg);}"]),SlackFeedback=styled__default.div`
   position: relative;
+  height: 354.781px;
   font-family: ${theme("fontFamily","inherit")};
   z-index: 99999998;
   bottom: 12px;
   right: 0;
-  margin: 1em;
+  margin: 0;
   text-align: left;
   font-weight: ${theme("content.fontWeight",400)};
 
@@ -80,6 +81,10 @@
   }
 `,Content=styled__default.div`
   padding: ${theme("content.padding")};
+
+  @media only screen and (max-width: 380px) {
+    width: 100vw;
+  }
 `,Icon=styled__default.div`
   margin-right: 0.5em;
 `,Trigger=styled__default.div`
