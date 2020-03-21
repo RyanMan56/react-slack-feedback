@@ -5,7 +5,7 @@ import e from"react";import t,{css as r,keyframes as o,ThemeProvider as a}from"s
   height: 354.781px;
   font-family: ${h("fontFamily","inherit")};
   z-index: 99999998;
-  bottom: 12px;
+  bottom: 0px;
   right: 0;
   margin: 0;
   text-align: left;
