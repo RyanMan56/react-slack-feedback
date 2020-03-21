@@ -7,7 +7,7 @@
   "author": "Mark Murray <mark.murray.ie@gmail.com> (https://github.com/markmur)",
   "license": "MIT",
   "scripts": {
-    "build": " NODE_ENV=production rollup --config rollup.config.js",
+    "build": "cross-env NODE_ENV=production rollup --config rollup.config.js",
     "build:demo": "rimraf docs && USE_SERVER=false NODE_ENV=production parcel build demo/index.html --out-dir=docs --public-url='.'",
     "bundlesize": "bundlesize",
     "lint-staged": "lint-staged",
@@ -40,12 +40,6 @@
       "xo"
     ]
   },
-  "precommit": {
-    "run": [
-      "lint-staged",
-      "test"
-    ]
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/markmur/react-slack-feedback"
@@ -76,6 +70,7 @@
     "bundlesize": "^0.17.1",
     "codecov": "^3.0.0",
     "cors": "^2.8.5",
+    "cross-env": "^7.0.2",
     "cssnano": "^3.7.3",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.9.1",
