@@ -46,7 +46,7 @@ export default {
     fontWeight: '400',
     boxShadow: '0 3px 12px 1px rgba(34, 44, 79, 0.1)',
     hoverBoxShadow: '0 6px 16px 2px rgba(0, 0, 0, 0.2)',
-    hoverBackgroundColor: 'inherit'
+    hoverBackgroundColor: '#222c4f'
   },
   input: {
     backgroundColor: 'white',
